@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://vjsi5fjoob0u"]
+
+[ext_resource type="Script" uid="uid://bwekjci3dvhxp" path="res://Script/derrota.gd" id="1_5iowx"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5iowx")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 454.0
+offset_top = 292.0
+offset_right = 738.0
+offset_bottom = 405.0
+theme_override_font_sizes/font_size = 38
+text = "PEERRRDDEUUU"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="volte" type="Button" parent="."]
+offset_left = 510.0
+offset_top = 417.0
+offset_right = 683.0
+offset_bottom = 448.0
+text = "Tente de novo"
+
+[node name="Feche o jogo" type="Button" parent="."]
+offset_left = 530.0
+offset_top = 373.0
+offset_right = 662.0
+offset_bottom = 412.0
+text = "Fechar
+"
+
+[connection signal="pressed" from="volte" to="." method="_on_volte_pressed"]
+[connection signal="pressed" from="Feche o jogo" to="." method="_on_feche_o_jogo_pressed"]

@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://qwdtydupq5tj"]
+
+[ext_resource type="Script" uid="uid://c4grqm65o8rnx" path="res://Script/vitoria.gd" id="1_iti7t"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_iti7t")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 437.0
+offset_top = 234.0
+offset_right = 735.0
+offset_bottom = 347.0
+theme_override_font_sizes/font_size = 38
+text = "VENNCEEUUU"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Feche o jogo" type="Button" parent="."]
+offset_left = 530.0
+offset_top = 373.0
+offset_right = 662.0
+offset_bottom = 412.0
+text = "Fechar
+"
+
+[connection signal="pressed" from="Feche o jogo" to="." method="_on_feche_o_jogo_pressed"]

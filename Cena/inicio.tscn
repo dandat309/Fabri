@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://colpcgvbr1eqq"]
+
+[ext_resource type="Texture2D" uid="uid://bwo7sddorn1dx" path="res://Script/steven.png" id="1_8xla8"]
+[ext_resource type="Script" uid="uid://v1x8mnuo3qyy" path="res://Cena/inicio.gd" id="1_pb6h5"]
+
+[node name="Inicio" type="Node2D"]
+script = ExtResource("1_pb6h5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1155.0
+offset_bottom = 651.0
+texture = ExtResource("1_8xla8")
+expand_mode = 1
+
+[node name="JOGAR" type="Button" parent="."]
+modulate = Color(1.269618, 1.269618, 1.269618, 1)
+self_modulate = Color(1.3655106, 1.3655106, 1.3655106, 1)
+offset_left = 934.0
+offset_top = 562.0
+offset_right = 1158.0
+offset_bottom = 651.0
+text = "JOGAR
+"
+
+[node name="QUIT" type="Button" parent="."]
+offset_top = 560.0
+offset_right = 232.0
+offset_bottom = 651.0
+text = "QUIT"
+
+[connection signal="pressed" from="JOGAR" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="QUIT" to="." method="_on_quit_pressed"]
