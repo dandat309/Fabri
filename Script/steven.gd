@@ -10,8 +10,6 @@ func curar():
 
 func defender():
 	defesaON = true
-	print(nome + " ativou um escudo!")
 
 func ultimate(alvo: Gem):    
 	alvo.vida -= 40 
-	print(nome + " usou seu Super Escudo Final!")
