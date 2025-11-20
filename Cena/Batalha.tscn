@@ -15,23 +15,8 @@ metadata/_custom_type_script = "uid://kkcdmw2axuj3"
 [node name="steven" parent="." instance=ExtResource("3_wg2n5")]
 position = Vector2(430, -1)
 
-[node name="steven2" type="ProgressBar" parent="."]
-offset_left = 691.0
-offset_top = 153.0
-offset_right = 1068.0
-offset_bottom = 180.0
-max_value = 120.0
-exp_edit = true
-
 [node name="inimigo" parent="." instance=ExtResource("4_74go7")]
 position = Vector2(0, 2)
-
-[node name="inimigo2" type="ProgressBar" parent="."]
-offset_left = 48.0
-offset_top = 146.0
-offset_right = 397.0
-offset_bottom = 173.0
-max_value = 150.0
 
 [node name="text" type="Label" parent="."]
 offset_top = 531.0
